@@ -14,6 +14,25 @@ namespace PersonalityQuiz_2
         public int UserPoints;
         public string Character = string.Empty;
         bool buttonsAreVisible;
+        public string image = "StarWars.png";
+        public string Image
+        {
+            get => image;
+            private set
+            {
+                if (image == value)
+                    return;
+
+                image = value;
+                OnPropertyChanged();
+                GoToNextQuestionTrue.ChangeCanExecute();
+                GoToNextQuestionFalse.ChangeCanExecute();
+
+
+
+            }
+        }
+
         
         public bool ButtonsAreVisible {
             get => buttonsAreVisible;
@@ -120,24 +139,30 @@ namespace PersonalityQuiz_2
             if (UserPoints <= 2 || UserPoints == 22)
             {
                 Character = "You are Emporer Palpatine";
+                Image = "Palpatine.jpg";
 
             }
             else if (UserPoints == 20)
             {
                 Character = "You are Jar Jar Binks";
+                Image = "binks.jpg";
+
 
             }
             else if (UserPoints == 7 || UserPoints == 27)
             {
                 Character = "You are Luke Skywalker";
+                Image = "Skywalker.png";
             }
             else if (UserPoints == 3 || UserPoints == 23 )
             {
                 Character = "You are Princess Leia";
+                Image = "leia.jpg";
             }
             else
             {
                 Character = "You are Darth Vader";
+                Image = "Vader.jpg";
             }
         }
 

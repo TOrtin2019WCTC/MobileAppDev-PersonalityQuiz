@@ -132,4 +132,12 @@
       <Name>PersonalityQuiz_2</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\StarWars.png" />
+    <BundleResource Include="Resources\binks.jpg" />
+    <BundleResource Include="Resources\Leia.jpg" />
+    <BundleResource Include="Resources\Vader.jpg" />
+    <BundleResource Include="Resources\Skywalker.png" />
+    <BundleResource Include="Resources\Palpatine.jpg" />
+  </ItemGroup>
 </Project>

@@ -56,3 +56,5 @@
 /Users/tim/Desktop/Repos/PersonalityQuiz_2/PersonalityQuiz_2.iOS/obj/iPhoneSimulator/Debug/PersonalityQuiz_2.iOS.csproj.CopyComplete
 /Users/tim/Desktop/Repos/PersonalityQuiz_2/PersonalityQuiz_2.iOS/obj/iPhoneSimulator/Debug/PersonalityQuiz_2.iOS.exe
 /Users/tim/Desktop/Repos/PersonalityQuiz_2/PersonalityQuiz_2.iOS/obj/iPhoneSimulator/Debug/PersonalityQuiz_2.iOS.pdb
+/Users/tim/Desktop/Repos/PersonalityQuiz_2/PersonalityQuiz_2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/optimized/StarWars.png
+/Users/tim/Desktop/Repos/PersonalityQuiz_2/PersonalityQuiz_2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/optimized/Skywalker.png
