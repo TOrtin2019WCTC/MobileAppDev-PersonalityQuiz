@@ -9,15 +9,19 @@
     <ContentPage.BindingContext>
         <local:QuizViewModel/>
     </ContentPage.BindingContext>
-<ContentView>
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-       <!--<Label x:Name="Points" Text="{Binding UserPoints, StringFormat='{0:N0'}"/>-->
-       <Label x:Name="Question" Text="{Binding CurrentQuestionContent}" TextColor="Black"></Label>
+   
+    <Frame BorderColor="Blue" Padding="40" Margin="40">
         
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="{Binding ButtonsAreVisible}">
-            <Button x:Name="True" Text="True" Command="{Binding GoToNextQuestionTrue}" HorizontalOptions="Start"></Button>
-            <Button x:Name="False" Text="False" Command="{Binding GoToNextQuestionFalse}" HorizontalOptions="End"></Button>
-        </StackLayout>
-    </StackLayout>
- </ContentView>
+        <ContentView>
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label x:Name="Question" Text="{Binding CurrentQuestionContent}" TextColor="Black"></Label>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="{Binding ButtonsAreVisible}">
+                    <Button x:Name="True" Text="True" Command="{Binding GoToNextQuestionTrue}" HorizontalOptions="Start"></Button>
+                    <Button x:Name="False" Text="False" Command="{Binding GoToNextQuestionFalse}" HorizontalOptions="End"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ContentView>
+    </Frame>
+  
 </ContentPage>

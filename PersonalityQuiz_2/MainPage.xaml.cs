@@ -14,7 +14,7 @@ namespace PersonalityQuiz_2
     public partial class MainPage : ContentPage, INotifyPropertyChanged
     {
 
-        QuizViewModel Quiz = new QuizViewModel();
+       
 
         public MainPage()
         {

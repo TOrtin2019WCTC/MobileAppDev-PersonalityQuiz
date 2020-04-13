@@ -14,6 +14,7 @@ namespace PersonalityQuiz_2
         public int UserPoints;
         public string Character = string.Empty;
         bool buttonsAreVisible;
+        
         public bool ButtonsAreVisible {
             get => buttonsAreVisible;
             private set
