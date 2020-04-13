@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:PersonalityQuiz_2"
+             mc:Ignorable="d"
+             x:Class="PersonalityQuiz_2.MainPage" >
+
+    <ContentPage.BindingContext>
+        <local:QuizViewModel/>
+    </ContentPage.BindingContext>
+<ContentView>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+       <!--<Label x:Name="Points" Text="{Binding UserPoints, StringFormat='{0:N0'}"/>-->
+       <Label x:Name="Question" Text="{Binding CurrentQuestionContent}" TextColor="Black"></Label>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="{Binding ButtonsAreVisible}">
+            <Button x:Name="True" Text="True" Command="{Binding GoToNextQuestionTrue}" HorizontalOptions="Start"></Button>
+            <Button x:Name="False" Text="False" Command="{Binding GoToNextQuestionFalse}" HorizontalOptions="End"></Button>
+        </StackLayout>
+    </StackLayout>
+ </ContentView>
+</ContentPage>
